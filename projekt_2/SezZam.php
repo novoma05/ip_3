@@ -12,15 +12,14 @@
             header('Location: login.php');
             exit;
         }
-        header('Location: logout.php');
         include('db_connect.php');
-        echo '<a href="logout.php">Odhlásit se</a>';
 
         $stmt = $pdo->query('SELECT employee_id, employee.name, surname, job, wage, room, phone, room.name as room_name 
 FROM employee, room WHERE room.room_id = employee.room ');
 
         ?>
         <a href="logout.php">Odhlásit se</a>
+        <a href="Prohlizec.php">Zpět</a>
         <h1>Seznam Zaměstnanců</h1><br>
         <?php
         
