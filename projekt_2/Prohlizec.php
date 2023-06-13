@@ -10,9 +10,9 @@
             header('Location: login.php');
             exit;
         }
-        echo '<a href="logout.php">Odhlásit se</a>';
-        echo '<a href="PassChng.php">Změnit heslo</a>';
-        ?>
+        ?>  
+        <a href="logout.php">Odhlásit se</a>
+        <a href="PassChng.php">Změnit heslo</a>
         <h1>Prohlížeč Databáze</h1>
         <p></p>
         <a class="brand-text" href="SezMist.php">Seznam Místností</a>
