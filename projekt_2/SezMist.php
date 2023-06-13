@@ -13,7 +13,11 @@
         }
         include('db_connect.php');
 
-        echo '<a href="logout.php">Odhlásit se</a>';
+        ?>
+        <a href="logout.php">Odhlásit se</a>
+        <a href="Prohlizec.php">Zpět</a>
+        <h1>Seznam Zaměstnanců</h1><br>
+        <?php
         
         $stmt = $pdo->query('SELECT * FROM room');
 
